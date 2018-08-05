@@ -1,6 +1,6 @@
-FROM busybox
-MAINTAINER Chris <c@crccheck.com>
-
+FROM centos
+MAINTAINER Chandan Kumar <chandank@becloudready.com>
+RUN yum install -y httpd
 ADD index.html /www/index.html
 
 EXPOSE 8000
